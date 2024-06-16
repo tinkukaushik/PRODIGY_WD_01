@@ -1,0 +1,148 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #222;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    margin-bottom: 2rem;
+}
+
+#home {
+    background-image: url('https://images.unsplash.com/photo-1554415707-6e8cfc93fe23');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+#products {
+    background-color: rgb(238, 255, 206);
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.product-item {
+    background-color: #fbffc2;
+    border: 5px solid #aeff00;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 800px;
+    max-height: 800px;
+    overflow: hidden;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+#about, #contact {
+    background-color: white;
+    text-align: center;
+}
+
+#about img, #contact img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+#home h1 {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: xx-large;
+color: #ffffff;
+animation: shrink 3s 1s ease-in-out forwards;
+}
+p {
+    margin-top: 1rem;
+    color: #555;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(2);
+        opacity: 1;
+    }
+}
+
+#contact{
+    background-color: black;
+    bottom: 0;
+    color: wheat;
+}
